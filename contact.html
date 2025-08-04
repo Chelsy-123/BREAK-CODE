@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contactform</title>
+    <link rel="stylesheet" href="css/contactstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="images/images.png" alt="logo" width="150px"
+          /></a>
+        </div>
+
+        <div class="main-menu">
+          <ul>
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li>
+              <a class="btn btn-dark" href="register.html">
+                <i class="fas fa-user"></i>REGISTER
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="contact-container">
+      <form action="" class="contact-right">
+        <div class="contact-right-title">
+          <h2>CONTACT US</h2>
+          <hr />
+        </div>
+        <label for="name">NAME</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="your name"
+          class="contact-input"
+          pattern="[a-zA-Z]{3,}"
+        />
+        <label for="email">EMAIL</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="your email"
+          class="contact-input"
+          required
+        />
+        <label for="message">YOUR QUERY</label>
+        <textarea
+          name="message"
+          placeholder="enter your message"
+          class="contact-input"
+          required
+        ></textarea>
+        <button type="submit">submit</button>
+      </form>
+    </div>
+    <!--footer-->
+    <footer class="footer bg-primary">
+      <div class="container">
+        <p class="copyright">
+          <i class="fas fa-copyright"></i>2025 IT TRAINING INSTITUTE | ALL
+          RIGHTS RESERVED
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
